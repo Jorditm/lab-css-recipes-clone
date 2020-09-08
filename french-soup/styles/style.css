@@ -1,9 +1,60 @@
-/*Some necessary adjustments*/
-h1, body, html, main {
-  margin: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap");
+
 /*Import the font and set the default size*/
+body {
+  margin: 0;
+  padding: 0;
+}
 html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+}
+
+#title {
+  background-image: url(/images/soup.jpg);
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 100px;
+}
+
+h3 {
+  margin: 8% 10% 3% 10%;
+  font-size: 40px;
+}
+
+.text {
+  margin: 5% 10% 5% 10%;
+  font-size: 32px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+hr {
+  width: 80%;
+}
+
+#ingredients li:before {
+  content: "- ";
+}
+#ingredients li {
+  list-style-type: none;
 }
